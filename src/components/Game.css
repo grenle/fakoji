@@ -1,0 +1,21 @@
+.spanwrap {
+  line-height: 4em;
+  overflow-wrap: break-word;
+  font-family   : monospace;
+}
+
+.spanwrap span{
+  padding       : 8px 20px;
+  font-size     : 35px;
+}
+
+.keyactive, .keydead{
+  margin        : 0 20px;
+  background    : black;
+  color         : lightgrey;
+  border-radius : 50%;
+}
+
+.keydead{
+  opacity: 0.5;
+}

@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//https://www.sttmedia.com/characterfrequency-french
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react'
+// import logo  from './logo.svg'
+
+// import getword from './utils/getword'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
+
+import Button from 'react-bootstrap/Button'
+
+import Game from './components/Game'
+
+class App extends React.Component{
+  render(){
+    return(
+      <div className="container-fluid">
+        <Game/>
+        <Button onClick={ () => console.log('prout prout prout que je t\'aime') }>PROUT</Button>
+      </div>
+    )
+  }
 }
 
 export default App;
